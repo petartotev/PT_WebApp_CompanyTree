@@ -1,0 +1,14 @@
+<label for="currentRoleId">Name: </label>
+<input id="currentRoleId" class="m-2" type="number" [formControl]="currentRoleId">
+<button (click)="submitRoleId()" class="btn btn-dark">SUBMIT!</button>
+<div *ngIf="currentRole != undefined">
+    <div class="row d-flex justify-content-center m-3">
+        <div class="card" style="width: 24rem;">
+            <img class="card-img-top" src={{currentRole.image}} alt="Card image cap">
+            <div class="card-body text-dark">
+                <h5 class="card-title">{{currentRole.name}}</h5>
+                <p class="card-text">{{currentRole.description}}</p>
+              </div>
+        </div>
+    </div>
+</div>

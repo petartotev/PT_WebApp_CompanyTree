@@ -1,0 +1,42 @@
+<!-- <p>employees works!</p> -->
+<div class="row d-flex justify-content-center m-3">
+    <button (click)="getAllEmployees()" class="btn btn-lg btn-dark" [hidden]="isClicked">FILL TABLE!</button>
+</div>
+<div class="m-3" [hidden]="!isClicked">
+    <table class="table table-striped table-dark table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Nationality</th>
+                <th>Image</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Date Birth</th>
+                <th>Date Hired</th>
+                <th>Date Created</th>
+                <th>Date Updated</th>
+                <th>Board?</th>
+                <th>Role</th>
+                <th>Team</th>
+            </tr>        
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of employees">
+                <td>{{item.id}}</td>
+                <td>{{item.firstName}} {{item.middleName}} {{item.lastName}}</td>
+                <td>{{item.nationality}}</td>
+                <td><img src={{item.image}} class="rounded-circle" height="50" witdth="50" (click)="openEmployeeProfile(item.id)"></td>
+                <td>{{item.phone}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.dateBirth | date}}</td>
+                <td>{{item.dateHired | date}}</td>
+                <td>{{item.dateCreated | date}}</td>
+                <td>{{item.dateUpdated | date}}</td>
+                <td>{{item.isBoardMember == true ? 'Yes' : 'No'}}</td>
+                <td>{{rolesNames.get(item.roleId)}}</td>
+                <td>{{item.teamId}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
