@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\migration_00000000000000.sql" />
+    <None Remove="Scripts\migration_20210822142145.sql" />
+    <None Remove="Scripts\migration_20210822143230.sql" />
+    <None Remove="Scripts\migration_20210822143715.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\migration_00000000000000.sql" />
+    <EmbeddedResource Include="Scripts\migration_20210822142145.sql" />
+    <EmbeddedResource Include="Scripts\migration_20210822143230.sql" />
+    <EmbeddedResource Include="Scripts\migration_20210822143715.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup" Version="4.5.0" />
+    <PackageReference Include="dbup-sqlserver" Version="4.5.0" />
+  </ItemGroup>
+
+</Project>

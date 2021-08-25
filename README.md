@@ -1,2 +1,27 @@
 # PT_WebApp_CompanyTree
-PT_WebApp_CompanyTree is an application that holds data about the employees of an imaginery company. Its dynamical Frontend Angular app corresponds with a Backend .NET Core Web API that gets data from a SQL Server database.
+
+## General Information
+
+![GitHub Logo](res/scrot/PT_WebApp_CompanyTree_screenshot-01.png)
+
+PT_WebApp_CompanyTree is a web application that handles communication between a backend .NET Core server and a frontend Angular app.  
+It should dynamically visualize information about an imaginery Company, its Employees, Roles and Teams...
+
+## Technologies
+
+Backend:
+- .NET Core Web API
+	- dbup
+	- Dapper
+- SQL Server Database
+
+Frontend:
+- Angular app
+
+## Contents
+
+### ang
+### res
+### src
+
+\~THE END\~

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CompanyTree.Entities\CompanyTree.Entities.csproj" />
+    <ProjectReference Include="..\CompanyTree.Repository\CompanyTree.Repository.csproj" />
+    <ProjectReference Include="..\CompanyTree.V1.Contracts\CompanyTree.V1.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
