@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ServicesModule } from './services/services.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { EmployeesComponent } from './routes/employees/employees.component';
 import { ProfileComponent } from './routes/profile/profile.component';
@@ -24,7 +25,8 @@ import { RolesComponent } from './routes/roles/roles.component';
     HttpClientModule,
     NgbModule,
     ServicesModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

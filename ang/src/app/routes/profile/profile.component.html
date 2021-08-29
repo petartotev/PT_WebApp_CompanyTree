@@ -1,3 +1,19 @@
+<div>
+    <p *ngIf="isParentInDarkMode" class="text-danger"><b>Dark mode is on! Info was passed from the parent as an @Input()!</b></p>
+    <p *ngIf="selectedEmployee === undefined">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+        printer took a galley of type and scrambled it to make a type specimen book. It has survived not 
+        only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    </p>
+    <p *ngIf="selectedEmployee !== undefined" class="text-center">
+        This is {{selectedEmployee.firstName}} {{selectedEmployee.lastName}}.<br>
+        {{selectedEmployee.firstName}} is from {{selectedEmployee.nationality}}.<br>
+        The employee was born back in {{selectedEmployee.dateBirth.toString().split('-')[0]}}<br>
+        {{selectedEmployee.firstName}} has been working for the Company since 
+        {{selectedEmployee.dateHired.toString().split('-')[0]}}.
+    </p>
+</div>
 <div *ngIf="selectedEmployee != undefined">
     <div class="row d-flex justify-content-center m-3">
         <div class="card" style="width: 24rem;">

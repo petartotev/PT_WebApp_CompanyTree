@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Employee, EmployeesService } from '../../services/employees.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { Employee, EmployeesService } from '../../services/employees.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
+  @Input() isParentInDarkMode;
   employees: Employee[];
   selectedEmployee: Employee;
 

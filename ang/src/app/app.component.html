@@ -1,24 +1,32 @@
 <div>
-  <h1 class="display-1 d-flex justify-content-center">Welcome to Company Tree!</h1>
-  <div class="card bg-success m-5" id="profileBase">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h1 class="display-2 d-flex justify-content-center">Welcome to Company Tree!</h1>
+    </div>
+    <div class="col-md-1">
+      <button (click)="swapDarkMode()" [ngClass]="!isDarkMode ? 'btn btn-primary' : 'btn btn-warning'"><fa-icon [icon]="iconCurrent"></fa-icon></button>
+    </div>
+  </div>
+  <div [ngClass]="!isDarkMode ? 'card text-dark bg-success m-5' : 'card text-white bg-warning m-5'" id="profileBase">
     <div class="card-header" id="profileHeader">
       <h3 class="mb-0">
-        <button class="btn text-light" data-toggle="collapse" data-target="#profileBody" aria-expanded="true" aria-controls="profileBody">
-          Profile
+        <button [ngClass]="!isDarkMode ? 'btn text-dark' : 'btn text-white'" data-toggle="collapse" data-target="#profileBody" aria-expanded="true" aria-controls="profileBody">
+          <b>Profile</b>
         </button>
       </h3>
     </div>
     <div id="profileBody" class="collapse show" aria-labelledby="profileHeader" data-parent="profileBase">
       <div class="card-body">
-        <app-profile></app-profile>
+        <app-profile [isParentInDarkMode]="isDarkMode"></app-profile>
       </div>
     </div>
   </div>
-  <div class="card bg-success m-5" id="employeesBase">
+  <div [ngClass]="!isDarkMode ? 'card text-dark bg-success m-5' : 'card text-white bg-warning m-5'" id="employeesBase">
     <div class="card-header" id="employeesHeader">
       <h3 class="mb-0">
-        <button class="btn text-light" data-toggle="collapse" data-target="#employeesBody" aria-expanded="true" aria-controls="employeesBody">
-          Employees
+        <button [ngClass]="!isDarkMode ? 'btn text-dark' : 'btn text-white'" data-toggle="collapse" data-target="#employeesBody" aria-expanded="true" aria-controls="employeesBody">
+          <b>Employees</b>
         </button>
       </h3>
     </div>
@@ -28,11 +36,11 @@
       </div>
     </div>
   </div>
-  <div class="card bg-success m-5" id="rolesBase">
+  <div [ngClass]="!isDarkMode ? 'card text-dark bg-success m-5' : 'card text-white bg-warning m-5'" id="rolesBase">
     <div class="card-header" id="rolesHeader">
       <h3 class="mb-0">
-        <button class="btn text-light" data-toggle="collapse" data-target="#rolesBody" aria-expanded="true" aria-controls="rolesBody">
-          Roles
+        <button [ngClass]="!isDarkMode ? 'btn text-dark' : 'btn text-white'" data-toggle="collapse" data-target="#rolesBody" aria-expanded="true" aria-controls="rolesBody">
+          <b>Roles</b>
         </button>
       </h3>
     </div>
