@@ -1,6 +1,6 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { EmployeesService } from '../services/employees.service';
+import { EmployeesService } from '../../services/employees.service';
 
 import { ProfileComponent } from './profile.component';
 

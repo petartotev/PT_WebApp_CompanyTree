@@ -2,8 +2,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, map, retry } from 'rxjs/operators';
 import { of } from 'rxjs';
-import { Role, RolesService } from '../services/roles.service';
-import { Employee, EmployeesService } from '../services/employees.service';
+import { Role, RolesService } from '../../services/roles.service';
+import { Employee, EmployeesService } from '../../services/employees.service';
 
 @Component({
   selector: 'app-employees',

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, map, retry } from 'rxjs/operators';
 import { of } from 'rxjs';
-import { Role, RolesService } from '../services/roles.service';
+import { Role, RolesService } from '../../services/roles.service';
 import { FormControl } from '@angular/forms';
 
 @Component({
