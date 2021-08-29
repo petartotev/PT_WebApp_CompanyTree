@@ -12,7 +12,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "cd .. && npm test"
+      "pre-commit": "cd ang && npm test"
     }
   },
   "private": true,
