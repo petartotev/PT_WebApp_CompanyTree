@@ -32,7 +32,7 @@
     </div>
     <div id="employeesBody" class="collapse show" aria-labelledby="employeesHeader" data-parent="employeesBase">
       <div class="card-body">
-        <app-employees (openProfileEmitter)="showProfile($event)"></app-employees>
+        <app-employees (openProfileEmitter)="showProfile($event)" [isParentInDarkMode]="isDarkMode"></app-employees>
       </div>
     </div>
   </div>

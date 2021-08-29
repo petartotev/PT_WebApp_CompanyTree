@@ -7,7 +7,7 @@ import { Employee, EmployeesService } from '../../services/employees.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  @Input() isParentInDarkMode;
+  @Input() isParentInDarkMode: boolean;
   employees: Employee[];
   selectedEmployee: Employee;
 

@@ -40,10 +40,10 @@ export class AppComponent {
     let bodyStyle: string;
 
     if (this.isDarkMode) {
-      bodyStyle = 'bg-dark text-light';
+      bodyStyle = 'bg-dark text-white';
     }
     else {
-      bodyStyle = 'bg-light text-dark';
+      bodyStyle = 'bg-white text-dark';
     }
 
     document.body.setAttribute('class', bodyStyle);

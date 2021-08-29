@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, map, retry } from 'rxjs/operators';
 import { of } from 'rxjs';
@@ -11,6 +11,7 @@ import { Employee, EmployeesService } from '../../services/employees.service';
   styleUrls: ['./employees.component.css'],
 })
 export class EmployeesComponent implements OnInit {
+  @Input() isParentInDarkMode: boolean;
   @Output() openProfileEmitter = new EventEmitter<number>();
 
   isClicked = false;
