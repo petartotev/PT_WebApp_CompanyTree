@@ -6,7 +6,7 @@
     </p>
 </div>
 <div class="row d-flex justify-content-center m-3">
-    <button (click)="getAllEmployees()" class="btn btn-lg btn-dark" [hidden]="isClicked">FILL TABLE!</button>
+    <button (click)="getAllEmployees()" class="btn btn-lg btn-dark" [hidden]="isClicked">GENERATE TABLE!</button>
 </div>
 <div class="m-3" [hidden]="!isClicked">
     <table [ngClass]="isParentInDarkMode ? 'table table-striped table-dark table-hover' : 'table table-striped table-light table-hover'">
