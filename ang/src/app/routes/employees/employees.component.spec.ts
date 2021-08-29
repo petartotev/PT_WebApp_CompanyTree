@@ -1,4 +1,4 @@
-simport { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { EmployeesComponent } from './employees.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';

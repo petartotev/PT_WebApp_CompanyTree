@@ -23,7 +23,6 @@ export class AppComponent {
 
   swapDarkMode() {
     this.isDarkMode = !this.isDarkMode;
-    
     this.setIconCurrent();
     this.setBodyStyle();
   }
@@ -41,12 +40,12 @@ export class AppComponent {
     let bodyStyle;
 
     if (this.isDarkMode) {
-      bodyStyle = "bg-dark text-light";
+      bodyStyle = 'bg-dark text-light';
     }
     else {
-      bodyStyle = "bg-light text-dark";
+      bodyStyle = 'bg-light text-dark';
     }
 
-    document.body.setAttribute("class", bodyStyle);
+    document.body.setAttribute('class', bodyStyle);
   }
 }

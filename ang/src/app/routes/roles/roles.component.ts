@@ -13,7 +13,7 @@ import { FormControl } from '@angular/forms';
 export class RolesComponent implements OnInit {
   currentRole: Role;
   currentRoleId = new FormControl(1);
-  testNum: number = 123;
+  testNum = 123;
 
   constructor(
     private rolesService: RolesService
