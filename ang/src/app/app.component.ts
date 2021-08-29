@@ -37,7 +37,7 @@ export class AppComponent {
   }
 
   private setBodyStyle() {
-    let bodyStyle;
+    let bodyStyle: string;
 
     if (this.isDarkMode) {
       bodyStyle = 'bg-dark text-light';
