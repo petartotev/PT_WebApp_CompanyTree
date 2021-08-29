@@ -2,4 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 cd ang
-ng test --watch=false --code-coverage
+# npx lint-staged
+ng lint
